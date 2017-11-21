@@ -1,13 +1,7 @@
-
 var Twit = require('twit');
+var config = require('./consumer.js');
 
-var T = new Twit({
-  consumer_key:         '...',
-  consumer_secret:      '...',
-  access_token:         '...',
-  access_token_secret:  '...',
-  timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests. 
-})
+var T = new Twit(config);
 
 //FIRST PART
 // Interval for tweet random number
@@ -60,7 +54,7 @@ function tweetEvent(event){
 
 // }
 
-// //MANAGE TWITTER ACTIONS
+// //MANAGE TWITTER FOLLOW
 var stream = T.stream('user');
 
 stream.on('follow', followed);
