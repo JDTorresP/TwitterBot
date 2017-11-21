@@ -1,0 +1,33 @@
+{
+  "name": "twitterbotjd",
+  "version": "1.0.0",
+  "description": "Bot twitter automaton just for fun and for class",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDTorresP/TwitterBot.git"
+  },
+  "keywords": [
+    "bot",
+    "twitter"
+  ],
+  "author": "Joan Torres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JDTorresP/TwitterBot/issues"
+  },
+  "homepage": "https://github.com/JDTorresP/TwitterBot#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "google-images": "^2.1.0",
+    "image-search": "0.0.1",
+    "mongoose": "^4.13.4",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.0",
+    "twit": "^2.2.9"
+  }
+}
